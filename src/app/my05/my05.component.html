@@ -1,0 +1,18 @@
+<p>my05 works!</p>
+<p>name: {{uName}}</p>
+<p>age: {{age}}</p>
+<div>Audit ? {{age >= 18 ? 'yes' : 'no'}}</div>
+<div>Age after 2 years {{age + 2}}</div>
+<div>age: {{age}}</div>
+<div>Capital Name: {{uName.toLocaleUpperCase()}} </div>
+<div>Capital Name length: {{uName.length}} </div>
+<p title={{myTitle}}> paragraph with title</p>
+<p title="{{myTitle}}"> paragraph with title</p>
+<p [title]=myTitle> paragraph with title</p>
+<p [title]="myTitle"> paragraph with title</p>
+<button (click)=btn_press()>Button</button>
+<br>
+<button (click)="btn_press()">Button</button>
+<br>
+<button (ngOnClick)="btn_press()">Button</button>
+<br>
