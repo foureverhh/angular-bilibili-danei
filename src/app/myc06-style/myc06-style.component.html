@@ -1,11 +1,18 @@
-<p>myc06-style works!</p>
-<div [ngStyle]="myStyleObj06">
-    <button  (click)="loadMore()">change style</button>
-</div>
-
-<button [ngClass]="myClassObj06" (click)="loadMore2()">to test [ngClass], change border color by setting btn-my-b to false</button>
 <div class="container">
     <div class="row">
-        <p class="col-md-1 off-md-5">hello world</p>
+        <p>myc06-style works!</p>
+        <div [ngStyle]="myStyleObj06">
+            <button  (click)="loadMore()">change style</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <button [ngClass]="myClassObj06" (click)="loadMore2()">to test [ngClass], change border color by setting btn-my-b to false</button>
+    </div>
+    <div class="row">
+        <p class="col-md-2 offset-md-5" [ngClass]="textMute" (click)="mute()">hello world</p>
     </div>
 </div>

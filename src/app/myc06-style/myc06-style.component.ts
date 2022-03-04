@@ -20,6 +20,10 @@ export class Myc06StyleComponent implements OnInit {
     'btn-my-b' : true
   }
 
+  textMute = {
+    'text-muted' : false
+  }
+
   constructor() { }
 
   ngOnInit(): void {
@@ -32,5 +36,9 @@ export class Myc06StyleComponent implements OnInit {
 
   loadMore2() {
     this.myClassObj06['btn-my-b'] = false;
+  }
+
+  mute() {
+    this.textMute['text-muted'] = !this.textMute['text-muted'];
   }
 }
