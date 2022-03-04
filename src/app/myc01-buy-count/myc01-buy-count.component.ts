@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-myc01-buy-count',
   templateUrl: './myc01-buy-count.component.html',
-  styleUrls: ['./myc01-buy-count.component.css']
+  styleUrls: ['./myc01-buy-count.component.scss']
 })
 export class Myc01BuyCountComponent implements OnInit {
   count: number = 0;

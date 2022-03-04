@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-my05',
   templateUrl: './my05.component.html',
-  styleUrls: ['./my05.component.css']
+  styleUrls: ['./my05.component.scss']
 })
 export class My05Component implements OnInit {
   uName:string = 'li';
