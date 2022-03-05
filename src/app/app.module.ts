@@ -10,8 +10,9 @@ import { My05Component } from './my05/my05.component';
 import { Myc01BuyCountComponent } from './myc01-buy-count/myc01-buy-count.component';
 import { Myc02NgforComponent } from './myc02-ngfor/myc02-ngfor.component';
 import { Myc06StyleComponent } from './myc06-style/myc06-style.component';
-import { Myc07SwitchComponent } from './myc07-switch/myc07-switch.component'
-
+import { Myc07SwitchComponent } from './myc07-switch/myc07-switch.component';
+import { Myc08NgModelComponent } from './myc08-ng-model/myc08-ng-model.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,10 +26,12 @@ import { Myc07SwitchComponent } from './myc07-switch/myc07-switch.component'
     Myc02NgforComponent,
     Myc06StyleComponent,
     Myc07SwitchComponent,
+    Myc08NgModelComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
