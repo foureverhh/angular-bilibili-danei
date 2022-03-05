@@ -9,7 +9,8 @@ import { MyC03Component } from './myc03/myc03.component';
 import { My05Component } from './my05/my05.component';
 import { Myc01BuyCountComponent } from './myc01-buy-count/myc01-buy-count.component';
 import { Myc02NgforComponent } from './myc02-ngfor/myc02-ngfor.component';
-import { Myc06StyleComponent } from './myc06-style/myc06-style.component'
+import { Myc06StyleComponent } from './myc06-style/myc06-style.component';
+import { Myc07SwitchComponent } from './myc07-switch/myc07-switch.component'
 
 
 
@@ -23,6 +24,7 @@ import { Myc06StyleComponent } from './myc06-style/myc06-style.component'
     Myc01BuyCountComponent,
     Myc02NgforComponent,
     Myc06StyleComponent,
+    Myc07SwitchComponent,
   ],
   imports: [
     BrowserModule,

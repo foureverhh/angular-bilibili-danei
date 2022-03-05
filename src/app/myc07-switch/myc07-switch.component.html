@@ -1,0 +1,11 @@
+<p>myc07-switch works!</p>
+<div class="container">
+    <div class="row">
+        <div [ngSwitch]="userLevel">
+            <h3 *ngSwitchCase="'normal'">welcome: normal customer</h3>
+            <h3 *ngSwitchCase="'vip'">welcome: vip</h3>
+            <h3 *ngSwitchCase="'blackGlod'">welcome: black gold</h3>
+            <h3 *ngSwitchDefault>not logged in</h3>
+        </div>
+    </div>
+</div>
