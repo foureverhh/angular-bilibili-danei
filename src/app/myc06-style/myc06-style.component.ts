@@ -29,6 +29,7 @@ export class Myc06StyleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+<<<<<<< HEAD
   loadMore() {
     this.myStyleObj06.border = '2px dotted darkblue';
     this.myStyleObj06['backgrund-color'] = 'purple';
@@ -41,4 +42,6 @@ export class Myc06StyleComponent implements OnInit {
   mute() {
     this.textMute['text-muted'] = !this.textMute['text-muted'];
   }
+=======
+>>>>>>> d889d17a10dcb06777bb577b7753f182c281879a
 }
