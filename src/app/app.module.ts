@@ -25,11 +25,8 @@ import { FormsModule } from '@angular/forms';
     Myc01BuyCountComponent,
     Myc02NgforComponent,
     Myc06StyleComponent,
-<<<<<<< HEAD
     Myc07SwitchComponent,
     Myc08NgModelComponent,
-=======
->>>>>>> d889d17a10dcb06777bb577b7753f182c281879a
   ],
   imports: [
     BrowserModule,

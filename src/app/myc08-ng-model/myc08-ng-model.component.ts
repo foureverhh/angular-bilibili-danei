@@ -15,4 +15,7 @@ export class Myc08NgModelComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  doUNameChange() {
+    console.log("ngModleChange()", this.uName);
+  }
 }

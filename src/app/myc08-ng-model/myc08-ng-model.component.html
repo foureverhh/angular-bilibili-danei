@@ -3,7 +3,8 @@
     <div class="row">
         <form action="">
             <p>[(ngModel)] 适用input select textaera交互式双向绑定</p>
-            <input type="text" name="username" placeholder="input username pls" [(ngModel)]="uName"/>
+            <p>(ngModelChange) 监听 input value的改变</p>
+            <input type="text" name="username" placeholder="input username pls" [(ngModel)]="uName" (ngModelChange)="doUNameChange()"/>
             <p>username input is {{uName}}</p>
         </form>
     </div>
