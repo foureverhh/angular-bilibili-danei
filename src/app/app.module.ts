@@ -13,6 +13,7 @@ import { Myc06StyleComponent } from './myc06-style/myc06-style.component';
 import { Myc07SwitchComponent } from './myc07-switch/myc07-switch.component';
 import { Myc08NgModelComponent } from './myc08-ng-model/myc08-ng-model.component';
 import { FormsModule } from '@angular/forms';
+import { XuYaoQiangDiaoDirective } from './self-define-directive/xuYaoQiangDiao/xu-yao-qiang-diao.directive';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     Myc06StyleComponent,
     Myc07SwitchComponent,
     Myc08NgModelComponent,
+    XuYaoQiangDiaoDirective,
   ],
   imports: [
     BrowserModule,
