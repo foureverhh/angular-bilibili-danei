@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class Myc08NgModelComponent implements OnInit {
 
   uName = "d";
+  userInput = '';
+  propt = '密码长度应该在6-12之间';
 
   constructor() { }
 
@@ -17,5 +19,15 @@ export class Myc08NgModelComponent implements OnInit {
 
   doUNameChange() {
     console.log("ngModleChange()", this.uName);
+  }
+
+  userInputChange() {
+    if(this.userInput.length > 12) {
+      this.propt = "input too long";
+    } else if(this.userInput.length < 6){
+      this.propt = 'input too short';
+    } else {
+      this.propt = 'input length is perfect'
+    }
   }
 }

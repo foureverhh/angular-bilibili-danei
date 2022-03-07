@@ -9,3 +9,14 @@
         </form>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <form action="">
+            <div class="form-group">
+                <label for="userInput" class="form-control-label">userInput</label>
+                <input type="text" name="userInput" id="userInput" class="form-control" [(ngModel)]="userInput" (ngModelChange)="userInputChange()">
+                <small>{{propt}}</small>
+            </div>
+        </form>
+    </div>
+</div>
