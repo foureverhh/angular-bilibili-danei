@@ -4,11 +4,12 @@ import { NgModule, Pipe } from "@angular/core";
     name : 'gender',    
 })
 export class GenderPipe {
-    transform(val: any): any {
+    transform(val: any, lang = 'zh'): any {
+
         if(val == 1) {
-            return 'Man';
+            return lang == 'en'?'Man':'男';
         }else if(val == 0) {
-            return 'Woamn';
+            return lang == 'en'?'Woman':'女';
         }
     }
 }

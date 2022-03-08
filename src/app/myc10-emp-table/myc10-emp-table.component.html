@@ -24,7 +24,7 @@
                     <td>{{ item.ename }}</td>
                     <td>{{ item.salary }}</td>
                     <td>{{ item.birthday }}</td>
-                    <td>{{ item.gender | gender }}</td>
+                    <td>{{ item.gender | gender:'en' }}</td>
                     <td>{{ item.politic }}</td>
                     <td><button (click)="removeEmp(i)">delete</button></td>
                 </tr>
