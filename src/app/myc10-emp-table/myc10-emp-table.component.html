@@ -1,0 +1,34 @@
+<p>myc10-emp-table </p>
+<div class="container">
+    <div class="row">
+        <table [ngStyle]="{'boder':'2px solid black'}">
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>name</td>
+                    <td>salary</td>
+                    <td>birthday</td>
+                    <td>gender</td>
+                    <td>politic</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody *ngIf="empList.length == 0">
+                <tr> 
+                    <td colspan="7">No employee</td> 
+                </tr>
+            </tbody>
+            <tbody *ngFor="let item of empList; let i = index">
+                <tr>
+                    <td>{{ item.eid }}</td>
+                    <td>{{ item.ename }}</td>
+                    <td>{{ item.salary }}</td>
+                    <td>{{ item.birthday }}</td>
+                    <td>{{ item.gender | gender }}</td>
+                    <td>{{ item.politic }}</td>
+                    <td><button (click)="removeEmp(i)">delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
