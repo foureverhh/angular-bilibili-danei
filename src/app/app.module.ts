@@ -14,6 +14,7 @@ import { Myc07SwitchComponent } from './myc07-switch/myc07-switch.component';
 import { Myc08NgModelComponent } from './myc08-ng-model/myc08-ng-model.component';
 import { FormsModule } from '@angular/forms';
 import { XuYaoQiangDiaoDirective } from './self-define-directive/xuYaoQiangDiao/xu-yao-qiang-diao.directive';
+import { Myc09ToDoListComponent } from './myc09-to-do-list/myc09-to-do-list.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { XuYaoQiangDiaoDirective } from './self-define-directive/xuYaoQiangDiao/
     Myc07SwitchComponent,
     Myc08NgModelComponent,
     XuYaoQiangDiaoDirective,
+    Myc09ToDoListComponent,
   ],
   imports: [
     BrowserModule,

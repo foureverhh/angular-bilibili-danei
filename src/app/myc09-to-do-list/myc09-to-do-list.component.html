@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="row">
+        <h3>myc09-to-do-list</h3>
+    </div>
+    <form action="">
+        <div class="form-group">
+            <input type="text" name="itemToAdd" id="" class="form-control" placeholder="请输入" [(ngModel)]="itemToAdd" >   
+            <small *ngIf="toDoList.length == 0">无待办事项</small>
+        </div>
+        <button type="submit" (click)="addItem()">添加事项</button>
+    </form>
+    <div class="row">
+        <ul class="list-group" *ngFor="let item of toDoList; let i = index">
+            <div class="row">
+                <li class="list-group-item col-md-4 offset-md-1 text-center">{{i+1}}-{{item}}</li><button class="col-md-4 offset-md-1" (click)="removeItem(i)">删除</button>
+            </div>
+        </ul>
+    </div>
+</div>
