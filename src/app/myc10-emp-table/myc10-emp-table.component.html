@@ -8,6 +8,8 @@
                     <td>name</td>
                     <td>name slice</td>
                     <td>salary</td>
+                    <td>salary 整数位四位，小数位最少1位，最多2位</td>
+                    <td>salary 货币格式</td>
                     <td>birthday</td>
                     <td>gender</td>
                     <td>politic</td>
@@ -24,6 +26,8 @@
                     <td>{{ item.eid }}</td>
                     <td>{{ item.ename | titlecase}}</td>
                     <td>{{ item.ename | slice:0:3 | titlecase}}</td>
+                    <td>{{ item.salary | number }}</td>
+                    <td>{{ item.salary | number:'4.1-2'}}</td>
                     <td>{{ item.salary }}</td>
                     <td>{{ item.birthday }}</td>
                     <td>{{ item.gender | gender:'en' }}</td>
