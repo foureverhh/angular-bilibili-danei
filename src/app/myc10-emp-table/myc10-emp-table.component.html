@@ -6,6 +6,7 @@
                 <tr>
                     <td>id</td>
                     <td>name</td>
+                    <td>name slice</td>
                     <td>salary</td>
                     <td>birthday</td>
                     <td>gender</td>
@@ -21,14 +22,17 @@
             <tbody *ngFor="let item of empList; let i = index">
                 <tr>
                     <td>{{ item.eid }}</td>
-                    <td>{{ item.ename }}</td>
+                    <td>{{ item.ename | titlecase}}</td>
+                    <td>{{ item.ename | slice:0:3 | titlecase}}</td>
                     <td>{{ item.salary }}</td>
                     <td>{{ item.birthday }}</td>
                     <td>{{ item.gender | gender:'en' }}</td>
-                    <td>{{ item.politic  | politicPipe }}</td>
+                    <td>{{ item.politic  | politicPipe: 'long' }}</td>
                     <td><button (click)="removeEmp(i)">delete</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
 </div>
+<hr>
+

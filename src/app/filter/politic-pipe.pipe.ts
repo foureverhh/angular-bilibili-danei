@@ -8,11 +8,11 @@ export class PoliticPipePipe implements PipeTransform {
   transform(val:number, format = 'short'): any {
     switch(val) {
       case 10 :
-        return "中共党员";
+        return format === 'short'? "党员" : "中共党员";
       case 20:
-        return "中共团员";
+        return format === 'short'? "团员" : "中共团员";
       case 30:
-        return "一般群众"
+        return format === 'short'? "群众" : "一般群众";
     };
 
   }
