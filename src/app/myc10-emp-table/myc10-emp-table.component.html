@@ -9,7 +9,8 @@
                     <td>name slice</td>
                     <td>salary</td>
                     <td>salary 整数位四位，小数位最少1位，最多2位</td>
-                    <td>salary 货币格式</td>
+                    <td>salary 欧元</td>
+                    <td>salary 人民币</td>
                     <td>birthday</td>
                     <td>gender</td>
                     <td>politic</td>
@@ -28,7 +29,8 @@
                     <td>{{ item.ename | slice:0:3 | titlecase}}</td>
                     <td>{{ item.salary | number }}</td>
                     <td>{{ item.salary | number:'4.1-2'}}</td>
-                    <td>{{ item.salary }}</td>
+                    <td>{{ item.salary | currency: '€'}}</td>
+                    <td>{{ item.salary | currency: '￥'}}</td>
                     <td>{{ item.birthday }}</td>
                     <td>{{ item.gender | gender:'en' }}</td>
                     <td>{{ item.politic  | politicPipe: 'long' }}</td>
