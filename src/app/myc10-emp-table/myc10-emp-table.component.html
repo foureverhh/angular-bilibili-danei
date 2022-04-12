@@ -12,6 +12,7 @@
                     <td>salary 欧元</td>
                     <td>salary 人民币</td>
                     <td>birthday</td>
+                    <td>birthday datePipe </td>
                     <td>gender</td>
                     <td>politic</td>
                     <td></td>
@@ -32,6 +33,7 @@
                     <td>{{ item.salary | currency: '€'}}</td>
                     <td>{{ item.salary | currency: '￥'}}</td>
                     <td>{{ item.birthday }}</td>
+                    <td>{{ item.birthday | date:'yy-MM-dd'}}</td>
                     <td>{{ item.gender | gender:'en' }}</td>
                     <td>{{ item.politic  | politicPipe: 'long' }}</td>
                     <td><button (click)="removeEmp(i)">delete</button></td>
