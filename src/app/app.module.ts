@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,8 @@ import { Myc10EmpTableComponent } from './myc10-emp-table/myc10-emp-table.compon
 import { GenderPipe } from './filter/gender.pipe';
 import { PoliticPipePipe } from './filter/politic-pipe.pipe';
 import { Myc11GoodsAdminComponent } from './myc11-goods-admin/myc11-goods-admin.component';
+import { HttpClientModule } from '@angular/common/http';
+import { Myc12HttpClientComponent } from './myc12-http-client/myc12-http-client.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +41,14 @@ import { Myc11GoodsAdminComponent } from './myc11-goods-admin/myc11-goods-admin.
     GenderPipe,
     PoliticPipePipe,
     Myc11GoodsAdminComponent,
+    Myc12HttpClientComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
