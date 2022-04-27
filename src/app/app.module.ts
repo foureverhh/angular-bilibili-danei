@@ -18,6 +18,7 @@ import { Myc09ToDoListComponent } from './myc09-to-do-list/myc09-to-do-list.comp
 import { Myc10EmpTableComponent } from './myc10-emp-table/myc10-emp-table.component';
 import { GenderPipe } from './filter/gender.pipe';
 import { PoliticPipePipe } from './filter/politic-pipe.pipe';
+import { Myc11GoodsAdminComponent } from './myc11-goods-admin/myc11-goods-admin.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { PoliticPipePipe } from './filter/politic-pipe.pipe';
     Myc10EmpTableComponent,
     GenderPipe,
     PoliticPipePipe,
+    Myc11GoodsAdminComponent,
   ],
   imports: [
     BrowserModule,
