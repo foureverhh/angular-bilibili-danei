@@ -22,6 +22,7 @@ import { PoliticPipePipe } from './filter/politic-pipe.pipe';
 import { Myc11GoodsAdminComponent } from './myc11-goods-admin/myc11-goods-admin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Myc12HttpClientComponent } from './myc12-http-client/myc12-http-client.component';
+import { Practise01Component } from './practises/practise01/practise01.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { Myc12HttpClientComponent } from './myc12-http-client/myc12-http-client.
     PoliticPipePipe,
     Myc11GoodsAdminComponent,
     Myc12HttpClientComponent,
+    Practise01Component,
   ],
   imports: [
     BrowserModule,
