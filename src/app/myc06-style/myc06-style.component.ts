@@ -29,7 +29,7 @@ export class Myc06StyleComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  loadMore() {
+loadMore() {
     this.myStyleObj06.border = '2px dotted darkblue';
     this.myStyleObj06['backgrund-color'] = 'purple';
   }

@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <h2>HttpClient</h2>
+    </div>
+    <div class="row">
+        <button class="col-md-4 offset-md-1" (click)="loadGoods()">load products</button>
+        <!--<button class="col-md-4 offset-md-2" (click)="removeGoods()">delete goods</button>-->
+    </div>
+    <div class="row">
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <td>index</td>
+                        <td>userId</td>
+                        <td>id</td>
+                        <td>title</td>
+                        <td>completed</td>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let user of users; let i = index">
+                    <tr>
+                        <td class="col-md-2 offset-md-1">{{ i }}</td>
+                        <td class="col-md-2">{{ user.userId }}</td>
+                        <td class="col-md-2">{{ user.id }}</td>
+                        <td class="col-md-2">{{ user.title }}</td>
+                        <td class="col-md-2">{{ user.completed }}</td>
+                    </tr>
+                </tbody>
+                <tbody class="row" *ngIf="users.length === 0">
+                    <tr>
+                        <td colspan="5" style="border:1px dotted blue">no user</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+            
+            
+            
+        
+    </div>
+</div>
