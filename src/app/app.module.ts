@@ -17,6 +17,7 @@ import { XuYaoQiangDiaoDirective } from './self-define-directive/xuYaoQiangDiao/
 import { Myc09ToDoListComponent } from './myc09-to-do-list/myc09-to-do-list.component';
 import { Myc10EmpTableComponent } from './myc10-emp-table/myc10-emp-table.component';
 import { GenderPipe } from './filter/gender.pipe';
+import { PoliticPipePipe } from './filter/politic-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { GenderPipe } from './filter/gender.pipe';
     Myc09ToDoListComponent,
     Myc10EmpTableComponent,
     GenderPipe,
+    PoliticPipePipe,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 import { NgModule, Pipe } from "@angular/core";
 
 @Pipe({
-    name : 'gender',    
+    name : 'gender',
 })
 export class GenderPipe {
     transform(val: any, lang = 'zh'): any {
