@@ -13,11 +13,10 @@ export class My69ProductlistComponent implements OnInit {
   users: User[] = [];
 
   constructor(private httpClient: HttpClient) {
-   this.getUsers();
   }
 
   ngOnInit(): void {
-
+    this.getUsers();
   }
 
   deleleUser(index: number) {
@@ -30,7 +29,7 @@ export class My69ProductlistComponent implements OnInit {
 
   getUsers() {
     this.httpClient.get<User[]>("https://jsonplaceholder.typicode.com/users")
-      .subscribe(res => this.users = res);
+    .subscribe(res => this.users = res);
   }
 }
 
