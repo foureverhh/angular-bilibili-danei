@@ -3,18 +3,23 @@ export class User{
     userId:string;
     id:string;
     title:string;
-    completed: boolean
+    completed: boolean;
+    private age:number;
     constructor(
         userId: string,
         id: string,
         title: string,
-        completed: boolean
+        completed: boolean,
+        age: number
     ) {
         this.userId = userId;
         this.id=id;
         this.title = title;
         this.completed = completed;
+        this.age = age;
     }
+
+    // private 
 /*
     getUserId() {
         return this.userId;

@@ -7,25 +7,24 @@ import { TimerserviceService } from '../../services/timerservice.service';
   styleUrls: ['./practise01.component.scss']
 })
 export class Practise01Component implements OnInit {
-  timeService:TimerserviceService;
 
-  constructor(timer:TimerserviceService) {
-    this.timeService = timer;
-   }
+  constructor(private timer:TimerserviceService) {
+
+  }
 
   ngOnInit(): void {
   }
 
   doLogin() {
-    this.timeService.start();
+    this.timer.start();
     // setTimeout(function(){console.log('Processing')}, 3000);
-    this.timeService.end('Login')
+    this.timer.end('Login')
 
   }
 
   doRegister() {  
-    this.timeService.start();
+    this.timer.start();
     // setTimeout(function(){console.log('Processing')}, 3000);
-    this.timeService.end('Register')
+    this.timer.end('Register')
   }
 }
