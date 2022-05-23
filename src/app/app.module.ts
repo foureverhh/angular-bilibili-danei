@@ -23,6 +23,7 @@ import { Myc11GoodsAdminComponent } from './myc11-goods-admin/myc11-goods-admin.
 import { HttpClientModule } from '@angular/common/http';
 import { Myc12HttpClientComponent } from './myc12-http-client/myc12-http-client.component';
 import { Practise01Component } from './practises/practise01/practise01.component';
+import { My69ProductlistComponent } from './my69-productlist/my69-productlist.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { Practise01Component } from './practises/practise01/practise01.component
     Myc11GoodsAdminComponent,
     Myc12HttpClientComponent,
     Practise01Component,
+    My69ProductlistComponent,
   ],
   imports: [
     BrowserModule,

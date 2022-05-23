@@ -1,0 +1,27 @@
+<table border="2px dotted red">
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Username</td>
+        <td>email</td>
+        <td>Option</td>
+      </tr>
+    </thead>
+    <tbody *ngIf="users.length === 0">
+      <tr>
+        <td colspan="5">No data</td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="users.length > 0">
+      <tr *ngFor="let user of users; let i = index" >
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td><button (click)="deleleUser(i)">Delete</button></td>
+      </tr>
+    </tbody>
+</table>
+
+<button (click)="reloadUsers()">Reload all users</button>

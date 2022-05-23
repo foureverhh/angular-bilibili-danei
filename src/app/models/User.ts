@@ -1,26 +1,29 @@
-
-export class User{
-    userId:string;
-    id:string;
-    title:string;
-    completed: boolean;
-    private age:number;
-    constructor(
-        userId: string,
-        id: string,
-        title: string,
-        completed: boolean,
-        age: number
-    ) {
-        this.userId = userId;
-        this.id=id;
-        this.title = title;
-        this.completed = completed;
-        this.age = age;
-    }
-
-    // private 
-/*
+export class User {
+  userId: string;
+  id: string;
+  title: string;
+  completed: boolean;
+  username: string;
+  name: string;
+  email: string;
+  constructor(
+    userId: string,
+    id: string,
+    title: string,
+    completed: boolean,
+    email: string,
+    name: string,
+    username: string
+  ) {
+    this.userId = userId;
+    this.id = id;
+    this.title = title;
+    this.completed = completed;
+    this.email = email;
+    this.name = name;
+    this.username = username;
+  }
+  /*
     getUserId() {
         return this.userId;
     }
@@ -60,5 +63,4 @@ export class User{
         )
     }
     */
-    
 }
