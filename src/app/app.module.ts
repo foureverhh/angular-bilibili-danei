@@ -24,6 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { Myc12HttpClientComponent } from './myc12-http-client/myc12-http-client.component';
 import { Practise01Component } from './practises/practise01/practise01.component';
 import { My69ProductlistComponent } from './my69-productlist/my69-productlist.component';
+import { ParentBlogComponent } from './parent-blog/parent-blog.component';
+import { Child01ModifyComponent } from './child01-modify/child01-modify.component';
+import { Child02PhotoComponent } from './child02-photo/child02-photo.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,9 @@ import { My69ProductlistComponent } from './my69-productlist/my69-productlist.co
     Myc12HttpClientComponent,
     Practise01Component,
     My69ProductlistComponent,
+    ParentBlogComponent,
+    Child01ModifyComponent,
+    Child02PhotoComponent,
   ],
   imports: [
     BrowserModule,
