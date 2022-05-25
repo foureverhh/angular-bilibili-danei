@@ -27,6 +27,9 @@ import { My69ProductlistComponent } from './my69-productlist/my69-productlist.co
 import { ParentBlogComponent } from './parent-blog/parent-blog.component';
 import { Child01ModifyComponent } from './child01-modify/child01-modify.component';
 import { Child02PhotoComponent } from './child02-photo/child02-photo.component';
+import { MyChild02PhotoComponent } from './transValueById/my-child02-photo/my-child02-photo.component';
+import { MyChild01ModifyComponent } from './transValueById/my-child01-modify/my-child01-modify.component';
+import { MyParentBlogComponent } from './transValueById/my-parent-blog/my-parent-blog.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,9 @@ import { Child02PhotoComponent } from './child02-photo/child02-photo.component';
     ParentBlogComponent,
     Child01ModifyComponent,
     Child02PhotoComponent,
+    MyChild02PhotoComponent,
+    MyChild01ModifyComponent,
+    MyParentBlogComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,5 @@
+<div style="background: #bf0;padding: 15px;"> 
+    <h2>{{username}}'s blog</h2>
+    <app-my-child01-modify (usernameModificationEvent)="modifyUserName($event)"></app-my-child01-modify>
+    <app-my-child02-photo [photoOwner]="username"></app-my-child02-photo>
+</div>
