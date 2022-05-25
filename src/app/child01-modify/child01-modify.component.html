@@ -1,3 +1,4 @@
 <div style="background-color: #fc3; padding: 10px">
-    <input type="text"><button>modify username</button>
+    <input type="text" [(ngModel)]="userInput">
+    <button (click)="changeUserName()">modify username</button>
 </div>
