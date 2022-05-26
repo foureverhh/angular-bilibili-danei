@@ -30,6 +30,10 @@ import { Child02PhotoComponent } from './child02-photo/child02-photo.component';
 import { MyChild02PhotoComponent } from './transValueById/my-child02-photo/my-child02-photo.component';
 import { MyChild01ModifyComponent } from './transValueById/my-child01-modify/my-child01-modify.component';
 import { MyParentBlogComponent } from './transValueById/my-parent-blog/my-parent-blog.component';
+import { StartPageComponent } from './routerLeaning/start-page/start-page.component';
+import { ProductListComponent } from './routerLeaning/product-list/product-list.component';
+import { ProductDetailComponent } from './routerLeaning/product-detail/product-detail.component';
+import { UserCenterComponent } from './routerLeaning/user-center/user-center.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +62,10 @@ import { MyParentBlogComponent } from './transValueById/my-parent-blog/my-parent
     MyChild02PhotoComponent,
     MyChild01ModifyComponent,
     MyParentBlogComponent,
+    StartPageComponent,
+    ProductListComponent,
+    ProductDetailComponent,
+    UserCenterComponent,
   ],
   imports: [
     BrowserModule,
