@@ -1,5 +1,7 @@
-<div style="background: #bf0;padding: 15px;"> 
+<div #parent style="background: #bf0;padding: 15px;"> 
     <h2>{{username}}'s blog</h2>
-    <app-my-child01-modify (usernameModificationEvent)="modifyUserName($event)"></app-my-child01-modify>
-    <app-my-child02-photo [photoOwner]="username"></app-my-child02-photo>
+    <app-my-child01-modify #child1 (usernameModificationEvent)="modifyUserName($event)"></app-my-child01-modify>
+    <app-my-child02-photo #child2 [photoOwner]="username"></app-my-child02-photo>
+    <hr>
+    <button (click)="printWithId()">print elements with ng id #</button>
 </div>
