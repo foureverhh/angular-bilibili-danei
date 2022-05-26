@@ -6,6 +6,7 @@ import { ProductDetailComponent } from './routerLeaning/product-detail/product-d
 import { UserCenterComponent } from './routerLeaning/user-center/user-center.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'start' },
   { path: 'start', component: StartPageComponent },
   { path: 'list', component: ProductListComponent},
   { path: 'detail', component: ProductDetailComponent },
