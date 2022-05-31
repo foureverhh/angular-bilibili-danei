@@ -19,16 +19,19 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 export class CourseDialogComponentComponent implements OnInit {
   title: string;
   description:string;
+  newId: string;
   form: FormGroup;
   constructor(
     private fb: FormBuilder,
     private dialogRef:MatDialogRef<CourseDialogComponentComponent>,
-    @Inject(MAT_DIALOG_DATA){ description, title} : any
+    @Inject(MAT_DIALOG_DATA){ description, title, id } : any
     ) { 
-      this.description = description
+      this.description = description;
       this.title = title;
+      this.newId = id;
       this.form = fb.group({
-        description :[ description, Validators.required ]
+        description :[ description, Validators.required ],
+        myId : [id, Validators.required ],
       });
     }
 
