@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-
+import { MatDialogModule } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyComponent01 } from './myComponent01';
@@ -13,7 +13,7 @@ import { Myc02NgforComponent } from './myc02-ngfor/myc02-ngfor.component';
 import { Myc06StyleComponent } from './myc06-style/myc06-style.component';
 import { Myc07SwitchComponent } from './myc07-switch/myc07-switch.component';
 import { Myc08NgModelComponent } from './myc08-ng-model/myc08-ng-model.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, NgControl } from '@angular/forms';
 import { XuYaoQiangDiaoDirective } from './self-define-directive/xuYaoQiangDiao/xu-yao-qiang-diao.directive';
 import { Myc09ToDoListComponent } from './myc09-to-do-list/myc09-to-do-list.component';
 import { Myc10EmpTableComponent } from './myc10-emp-table/myc10-emp-table.component';
@@ -35,7 +35,18 @@ import { ProductListComponent } from './routerLeaning/product-list/product-list.
 import { ProductDetailComponent } from './routerLeaning/product-detail/product-detail.component';
 import { UserCenterComponent } from './routerLeaning/user-center/user-center.component';
 import { NotFoundPageComponent } from './routerLeaning/not-found-page/not-found-page.component';
-
+import { CourseDialogComponentComponent } from './matDialogDemo/course-dialog-component/course-dialog-component.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import {  MatSidenavModule } from '@angular/material/sidenav';
+import {  MatIconModule} from '@angular/material/icon';
+import {  MatListModule } from '@angular/material/list';
+import {  MatStepperModule} from '@angular/material/stepper';
+import {  MatInputModule } from '@angular/material/input';
+import { MatRippleModule } from '@angular/material/core';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +79,7 @@ import { NotFoundPageComponent } from './routerLeaning/not-found-page/not-found-
     ProductDetailComponent,
     UserCenterComponent,
     NotFoundPageComponent,
+    CourseDialogComponentComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,8 +87,23 @@ import { NotFoundPageComponent } from './routerLeaning/not-found-page/not-found-
     FormsModule,
     HttpClientModule,
     CommonModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatToolbarModule, 
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule ,
+    MatStepperModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    MatRippleModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ FormBuilder ],
+  bootstrap: [AppComponent],
+  entryComponents: [ CourseDialogComponentComponent ],
 })
-export class AppModule { }
+export class AppModule { 
+
+}
